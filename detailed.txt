@@ -41,6 +41,7 @@
 * as Male
 * as Female
 * as Femboy
+* as Tomboy
 * as Futa
 * as MtF trans
 * as FtM trans
@@ -51,7 +52,6 @@
 * as Dominant
 * as Submissive
 * as Switch
-* as Celebrity
 
 #General
 (Giving, Receiving)
