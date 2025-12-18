@@ -423,7 +423,7 @@ $(function(){
             var image = canvas.toDataURL();
             // Create a link
             $("#ResultsImage").attr("src",image);
-            $("#ResultsOverlay").fadeIn();
+            $("#ResultsOverlay").css("display","flex").hide().fadeIn();
             $('#Loading').hide();
 /*
             // Send canvas to imgur
