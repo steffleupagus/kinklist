@@ -419,6 +419,13 @@ $(function(){
 
             //return $(canvas).insertBefore($('#InputList'));
 
+            // Convert the canvas to data
+            var image = canvas.toDataURL();
+            // Create a link
+            $("#ResultsImage").attr("src",image);
+            $("#ResultsOverlay").fadeIn();
+
+/*
             // Send canvas to imgur
             $.ajax({
                 url: 'https://api.imgur.com/3/image',
@@ -443,6 +450,7 @@ $(function(){
                     alert('Failed to upload to imgur, could not connect');
                 }
             });
+*/            
         },
         encode: function(base, input){
             var hashBase = inputKinks.hashChars.length;
@@ -645,6 +653,9 @@ $(function(){
     });
     $('#EditOverlay').on('click', function(){
         $(this).fadeOut();
+    });
+    $('#CloseResults').on('click', function(){
+        $('#ResultsOverlay').fadeOut();
     });
     $('#KinksOK').on('click', function(){
         var selection = inputKinks.saveSelection();
