@@ -424,7 +424,7 @@ $(function(){
             // Create a link
             $("#ResultsImage").attr("src",image);
             $("#ResultsOverlay").fadeIn();
-
+            $('#Loading').hide();
 /*
             // Send canvas to imgur
             $.ajax({
