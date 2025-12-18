@@ -362,6 +362,34 @@ td + td { border-left-style:none }
 	cursor:pointer
 }
 
+#ResultsOverlay #ResultsImage {
+	width: 60%;
+	height: calc(100vh - 70px) ;
+	min-width: 330px;
+	position:fixed; 
+	top: 15px; 
+	left: 20%;
+	border-radius:5px;
+}
+
+#ResultsOverlay #CloseResults {
+	box-sizing:border-box;
+	position:absolute;
+	bottom:10px;
+	width:330px;
+	height:30px;
+	left:50%;
+	margin-left:-165px;
+	color:#FFF;
+	text-transform:uppercase;
+	background-color:#4980ae;
+	font-size:18px;
+	border-style:none;
+	border-radius:5px;
+	cursor:pointer
+}
+
+
 #InputOverlay {
 	text-align:center;
 	white-space:nowrap
