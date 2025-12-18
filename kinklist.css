@@ -362,13 +362,29 @@ td + td { border-left-style:none }
 	cursor:pointer
 }
 
+#ResultsOverlay {
+	width: 100%;       /* or any desired width */
+	height: 100vh;     /* or any desired height for the container */
+	display: flex;     /* Use flexbox for centering */
+	justify-content: center; /* Center horizontally */
+	align-items: center;     /* Center vertically */
+	overflow: hidden;  /* Hide any overflowing parts */
+	border: 1px solid black; /* Optional, for visualization */
+}
+
 #ResultsOverlay #ResultsImage {
+  	/* Use object-fit to control how the image fits within the container */
+	object-fit: contain; /* Scales to fit inside, maintaining aspect ratio (letterboxed if needed) */
 	width: 60%;
-	height: calc(100vh - 70px) ;
 	min-width: 330px;
-	position:fixed; 
-	top: 15px; 
-	left: 20%;
+  	max-width: 100%;   /* Ensure image doesn't exceed container width */
+	
+  	max-height: calc(100vh - 70px);  /* Ensure image doesn't exceed container height */	
+	height: calc(100vh - 70px);
+	
+/*	position:fixed; */
+/*	top: 15px; */
+/*	left: 20%; */
 	border-radius:5px;
 }
 
