@@ -365,7 +365,7 @@ td + td { border-left-style:none }
 #ResultsOverlay {
 	width: 100%;       /* or any desired width */
 	height: 100vh;     /* or any desired height for the container */
-	display: flex;     /* Use flexbox for centering */
+	/*display: flex;     /* Use flexbox for centering */
 	justify-content: center; /* Center horizontally */
 	align-items: center;     /* Center vertically */
 	overflow: hidden;  /* Hide any overflowing parts */
